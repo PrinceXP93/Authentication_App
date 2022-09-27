@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* general styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* end of general styling */
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* sidebar */
+.container .sidebar {
+    width: 520px;
+    background: url('./assets/bicrypto-bg.png');
+    background-color: #121212de;
+    background-blend-mode: overlay;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .sidebar .user {
+    margin: 20vh 0 30px 0;
+}
+
+.container .sidebar .user img {
+    height: 150px;
+    width: 150px;
+    border-radius: 1000px;
+    object-fit: cover;
+}
+.container .sidebar .user h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+.container .sidebar .user p {
+    color: #21b6cf;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .sidebar .skills .title{
+    color: #21b6cf;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .sidebar .skills .skill{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.container .sidebar .action {
+    margin-top: 30px;
+}
+.container .sidebar .action a {
+    text-decoration: none;
+    background-color: #21b6cf;
+    padding: 8px 30px;
+    box-shadow: 0 0 3px 2px #fff;
+    color: #fff;
+    border-radius: 10px;
+}
+/* end of sidebar */
+.container .page {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 0 30px;
+}
+
+.container .page .header {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+
+}
+.container .page .header img {
+    height: 100%;
+}
+
+
+/* logout */
+
+/* logout */
+.logout {
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.logout:hover {
+    transform: rotate(75deg);
+}
+
+.logout img {
+    height: 100%;
+}
+/* end of logut */
+
+.page-inner {
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+
+
+/* form */
+
+
+form {
+    width: 95%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+form .form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+form .form-group input {
+    height: 40px;
+}
+
+
+/* btn */
+
+.btn {
+    background-color: #21b6cf;
+    padding: 8px 30px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 0 3px 2px #fff;
+    color: #fff;
+    border-radius: 10px;
+}
